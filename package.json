@@ -1,0 +1,33 @@
+{
+  "name": "my-razzle-app",
+  "version": "4.2.13",
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "cross-env NODE_ENV=production node build/server.js",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "express-pino-logger": "^7.0.0",
+    "pino": "^7.6.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-razzle": "4.2.13",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^4.5.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "razzle": "4.2.13",
+    "razzle-dev-utils": "4.2.13",
+    "razzle-plugin-typescript": "^4.2.13",
+    "typescript": "^4.5.4",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
